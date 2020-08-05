@@ -36,5 +36,35 @@
 		echo '$yは30ではありません';
 	}
 
+	//if分を使った条件分岐
+	$coin = 0;
+
+	if ($coin == 0){
+		echo '表';
+	}elseif ($coin == 1){
+		echo '裏';
+	}else{
+		echo 'エラー';
+	}
+
+	//switch文を使った条件分岐 おみくじパターン
+	$num = 5;
+	$remainder = $num % 3;
+
+	switch($remainder){
+		case 0:
+			echo '大吉です';
+			break;
+		case 1:
+			echo '中吉です';
+			break;
+		case 2:
+			echo '小吉です';
+			break;
+		default:
+			echo '凶です';
+	}
+
 ?>
+
 
