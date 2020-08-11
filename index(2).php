@@ -68,4 +68,47 @@
 		}
 		echo $i;
 	}
+
+	//foreach文
+	$towns = array('Tokyo', 'New York', 'Hong Kong');
+	foreach ($towns as $town){
+		echo $town.'';
+		echo '<br>';
+	}
+
+	//foreach書き方(2)
+	$colors = array(
+		'Apple' => 'Red',
+		'Banana' => 'Yellow',
+		'Grape' => 'Purple'
+	);
+
+	foreach($colors as $key => $value){
+		echo $key.':'.$value.'';
+	}
+
+	//関数 文字数の出力
+	echo strlen ('Progate');
+
+	//文字数の出力 変数版
+	$language = 'PHP';
+	echo strlen($language);
+
+	//count関数
+	$towns = array('東京', '大阪', '京都');
+	echo count($towns);
+	echo '<br>';
+
+	//ランダム関数
+	echo rand(1,4);
+	echo '<br>';
+	echo rand(5,20);
+
+	//関数の定義と呼び出し
+	function hello(){
+		echo 'Hello,world!';
+	}
+	hello();
+
+	
 ?>
