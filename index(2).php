@@ -110,5 +110,9 @@
 	}
 	hello();
 
-	
+	//関数定義と足し算 3と5を代入。
+	function printSum($num1, $num2){
+		echo $num1 + $num2;
+	}
+	printSum(3,5);
 ?>
