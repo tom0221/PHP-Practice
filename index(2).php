@@ -115,4 +115,13 @@
 		echo $num1 + $num2;
 	}
 	printSum(3,5);
+
+	//関数printRectangleArea定義と、引数設定
+	echo '<br>';
+	function printRectangleArea($height,$width){
+		echo $height*$width;
+	}
+
+	printRectangleArea(5,10);
+	echo '<br>';
 ?>
