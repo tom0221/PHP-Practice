@@ -6,20 +6,19 @@ class Menu{
   public $name;
 
   //コンストラクタ new MENU()メソッドで自動的に呼ばれ表示される
-  public function __construct($name){
-    $this->name = $name;
+  public function __construct(){
+  	echo '1つのメニューが作成されました';
   }
 
   //メソッド
   public function hello(){
-    // echo '私はMenuクラスのインスタンスです';
-    echo '私の名前は'.$this->name.'です';
+  	// echo '私はMenuクラスのインスタンスです';
+  	echo '私の名前は'.$this->name.'です';
   }
 }
 
 
-$curry = new Menu('CURRY');
-
+$curry = new Menu();
 $pasta = new Menu();
 
 $curry->name = 'CURRY';
@@ -33,8 +32,5 @@ echo $pasta->name;
 // $curry $pastaに対してhelloメソッドを呼び出してください
 $curry->hello();
 $pasta->hello();
+
 ?>
-
-
-
-<p><?php echo $curry->name ?></p>
