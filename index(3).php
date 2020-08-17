@@ -9,6 +9,7 @@
 <p><?php echo $pasta->name ?></p>
 
 <div class="menu-items">
+
 	<?php foreach ($menus as $menu): ?>
 		<div class="menu-item">
 			<img src="<?php echo $menu->image ?>">
@@ -17,4 +18,5 @@
         	<p class="price">¥<?php echo $menu->price ?></p>
 		</div>
 	<?php endforeach ?>
+
 </div>
